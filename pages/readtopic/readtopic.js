@@ -1,5 +1,4 @@
 // readtopic.js
-var Api = require('../../utils/api.js');
 var ZnqApi = require('../../utils/znqapi.js');
 var app = getApp()
 
