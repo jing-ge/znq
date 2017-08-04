@@ -1,0 +1,21 @@
+/* topic.wxss */
+.topiclist{
+  padding: 15rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.topicitem{
+  width: 180rpx;
+  height: 200rpx;
+}
+.topicimg{
+  padding: 15rpx;
+  width:140rpx;
+  height: 140rpx;
+}
+.topicname{
+  text-align: center;
+  color:rgb(170,170,170);
+  font-size: 30rpx;
+}

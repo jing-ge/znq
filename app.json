@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/latest/latest",
+    "pages/hot/hot",
+    "pages/topicList/topicList",
+    "pages/detail/detail",
+    "pages/my/my",
+    "pages/topic/topic",
+    "pages/readtopic/readtopic",
+    "pages/add/add",
+    "pages/zan/zan",
+    "pages/shoucang/shoucang",
+    "pages/wodetiezi/wodetiezi",
+    "pages/xitong/xitong"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "rgb(251,143,153)",
+    "navigationBarTitleText": "中南墙",
+    "navigationBarTextStyle": "yellow",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "color": "rgb(137,137,137)",
+    "selectedColor": "rgb(251,143,153)",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/latest/latest",
+        "text": "最新",
+        "iconPath": "images/first.png",
+        "selectedIconPath": "images/first_on.png"
+      },
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "最热",
+        "iconPath": "images/hotest.png",
+        "selectedIconPath": "images/hotest_on.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "iconPath": "images/add.png",
+        "text": "发帖",
+        "selectedIconPath": "images/add_on2.png"
+      },
+      {
+        "pagePath": "pages/topic/topic",
+        "text": "主题",
+        "iconPath": "images/topic.png",
+        "selectedIconPath": "images/topic_on.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_on.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+<!--node.wxml-->
+<view class="container">
+  <view class="xitong"> 我的系统信息如下：</view>
+  <view class="node-list">
+      <view class="node-item">
+          <text class="node-title" hover-class="navigator-hover"></text>
+      </view>
+      <view class="node-item">
+          <text class="node-title" hover-class="navigator-hover">手机型号：{{info.model}}</text>
+      </view>
+      <view class="node-item">
+          <text class="node-title" hover-class="navigator-hover">设备像素比：{{info.pixelRatio}}</text>
+      </view>
+      <view class="node-item">
+          <text class="node-title" hover-class="navigator-hover">屏幕宽度：{{info.screenWidth}}</text>
+      </view>
+      <view class="node-item">
+          <text class="node-title" hover-class="navigator-hover">屏幕高度：{{info.screenHeight}}</text>
+      </view>
+      <view class="node-item">
+          <text class="node-title" hover-class="navigator-hover">微信设置的语言：{{info.language}}</text>
+      </view>
+      <view class="node-item">
+          <text class="node-title" hover-class="navigator-hover">微信版本号：{{info.version}}</text>
+      </view>
+      <view class="node-item">
+          <text class="node-title" hover-class="navigator-hover">操作系统版本：{{info.system}}</text>
+      </view>
+      <view class="node-item">
+          <text class="node-title" hover-class="navigator-hover">客户端平台：{{info.platform}}</text>
+      </view>
+      <view class="node-item">
+          <text class="node-title" hover-class="navigator-hover">客户端基础库版本：{{info.SDKVersion}}</text>
+      </view>
+    
+  </view>
+</view>

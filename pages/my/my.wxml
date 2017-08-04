@@ -1,0 +1,23 @@
+<view class="container">
+	<view  bindtap="bindViewTap" class="userinfo">
+		<image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"></image>
+		<text class="userinfo-nickname">{{ userInfo.nickName }}</text>
+	</view>
+	<view class="info_list">
+		<view ><image class="infotitle" src="../../images/my/gerenzhongxin.png"></image></view>
+    <view class="info">
+      <view class="infoitem"  catchtap="clickinfo1">
+        <image class=" infoimg" src="../../images/my/wodeshoucang.png" ></image>
+      </view>
+      <view class="infoitem"  catchtap="clickinfo2">
+        <image class=" infoimg" src="../../images/my/wodezan.png" ></image>
+      </view>
+      <view class="infoitem"  catchtap="clickinfo3">
+        <image class=" infoimg" src="../../images/my/wodetiezi.png" ></image>
+      </view>
+      <view class="infoitem"  catchtap="clickinfo4">
+        <image class=" infoimg" src="../../images/my/xitongtongzhi.png" ></image>
+      </view>
+    </view>
+	</view>
+</view>

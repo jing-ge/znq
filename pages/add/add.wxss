@@ -1,0 +1,31 @@
+/* add.wxss */
+.container{
+}
+.form{
+  padding-top: 20rpx;
+}
+.titlename{
+  font-size: 18pt;
+  padding: 20rpx;
+}
+.titlen{
+  background-color: rgb(251, 249, 251);
+  width:100%;
+  height: 80rpx;
+  padding-left: 45rpx;
+  font-size: 14pt;
+}
+.contentn{
+  background-color: rgb(251, 249, 251);
+  width:100%;
+
+  padding: 45rpx;
+  font-size: 14pt;
+}
+
+.formitem{
+  padding-top: 20rpx;
+}
+.btn{
+  padding: 15rpx;
+}

@@ -1,0 +1,26 @@
+<!--readtopic.wxml-->
+<view class="container">
+  <view class="topic-main">
+      <block wx:for="{{latest}}">
+        <view class="topic-item" index="{{index}}" id="{{item.id}}" catchtap="redictDetail">
+            <image class="member-avatar" src="{{item.userinfo.avatarUrl}}" background-size="cover"></image>
+            <view class="topic-info">
+                <view class="topic-inner">
+                    <view class="topic-left">
+                        <view class="topic-title"><text>{{item.title}}</text></view>
+                        <view >
+                            <text class="node-name">{{item.topicinfo.name}}</text>
+                            <text class="node-name">{{item.userinfo.nickName}}</text>
+                            <text class="member-nickname">{{item.subtime}}</text>
+                        </view>
+                    </view>
+                    <view class="reply-num">{{item.count_comments}}</view>
+                </view>
+            </view>
+        </view>
+      </block>
+  </view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

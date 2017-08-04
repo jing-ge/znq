@@ -1,0 +1,30 @@
+<!--add.wxml-->
+<view class="container">
+  <view class="form">
+    <form bindsubmit="formSubmit" bindreset="formReset" class="form">
+      <view class="title formitem">
+        <view class="titlename">上墙题目:</view>
+        <input bindconfirm="clear" class="titlen" name="title" placeholder="随你所说" focus value="{{title}}"/>
+      </view>
+      <view class="content title formitem">
+        <view class="titlename">上墙内容:</view>
+        <textarea class="contentn" name="content" placeholder="尽情发挥你的想象" focus value="{{content}}"/>
+      </view>
+      <view class="topic">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" name="topicid">
+          <view class="picker titlename">
+            当前主题：{{array[index]}}》》》》
+          </view>
+        </picker>
+      </view>
+      <view class="btn-area title formitem">
+        <view class="btn">
+          <button formType="submit" type="primary">上墙！上墙！</button>
+        </view>
+        <view class="btn">
+          <button formType="reset" type="warn">想想再说吧(清空)</button>
+        </view>      
+      </view>
+    </form>
+  </view>
+</view>

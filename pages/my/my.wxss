@@ -1,0 +1,31 @@
+.userinfo {
+	display: flex;
+	flex-direction: column;
+	padding: 50rpx 0;
+	align-items: center;
+	background: rgb(251,143,153);
+}
+
+.userinfo-avatar {
+	width: 128rpx;
+	height: 128rpx;
+	margin: 20rpx;
+	border-radius: 50%;
+}
+.infotitle{
+  width: 100%;
+  height: 100rpx;
+}
+.userinfo-nickname {
+	color: #fff;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.infoimg{
+  width:186rpx;
+  height: 200rpx;
+}
+

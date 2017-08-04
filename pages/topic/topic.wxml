@@ -1,0 +1,15 @@
+<!--topic.wxml-->
+<view class="container">
+  <view class="topiclist">
+    <block wx:for="{{topicinfo}}">
+      <view class="topicitem" id="{{item.id}}" catchtap="readtopic">
+        <image class=" topicimg" src="{{item.newimgurl}}" ></image>
+        <view class="topicname">{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+
+</view>

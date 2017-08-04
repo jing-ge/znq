@@ -1,0 +1,43 @@
+<!--detail.wxml-->
+<view class="container">
+  <view class="topic-detail">
+    <view class="topic-owner">
+        <image class="owner-avatar" src="{{mcontent.userinfo.avatarUrl}}" id="{{mcontent.userinfo.id}}" bindtap="showUserInfo"></image>
+        <view class="topic-tit">{{mcontent.title}}</view>
+    </view>
+    <view class="topic-info">
+        <text>{{mcontent.userinfo.nickName}}</text>
+        <text class="topic-created">{{mcontent.subtime}}</text>
+    </view>
+    <view class="topic-desc">
+        <text>{{mcontent.content}}</text>
+    </view>
+  </view>
+  <view class="replies">
+    <block wx:for="{{comments}}">
+        <view class="replies-item" id="{{item.id}}">
+            <view class="reply-owner">
+                <image class="reply-avatar" src="{{item.userinfo.avatarUrl}}"></image>
+                <text class="reply-name">{{item.userinfo.nickName}}</text>
+                <text class="reply-time">{{item.subtime}}</text>
+            </view>
+            <view class="reply-content">
+                {{item.comment}}
+            </view>
+        </view>
+    </block>
+  </view>
+  <view class="xuanfu">
+    <form  bindsubmit="formSubmit">
+    <view class="form">
+        <view ><input class="comment"  name="comment" placeholder="随便说说" focus/></view>
+        <view ><button class="btn" formType="submit" >回复</button></view>
+    </view>
+   
+    
+    </form>
+  </view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

@@ -1,0 +1,29 @@
+.zanimg{
+  width: 80rpx;
+  height: 80rpx;
+}
+.shoucangimg{
+  width: 80rpx;
+  height: 80rpx;
+}
+.bottom{
+  border-bottom: rgb(251, 143, 153) solid 1px;
+  display: flex;
+  flex-direction: row;
+}
+.zan{
+  display: flex;
+  flex-direction: row;
+  padding-left: 400rpx;
+}
+.count_zan{
+  margin-top: 20rpx;
+}
+.shoucang{
+  display: flex;
+  flex-direction: row;
+  padding-left: 80rpx;
+}
+.count_shoucang{
+  margin-top: 20rpx;
+}
